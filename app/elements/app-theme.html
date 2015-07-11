@@ -20,11 +20,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     #myHeaderPanel {
 /*     background-color: #E7E7E7;*/
         background-color: #E9E9E9;
-        background-image: url(/images/bg.JPG);
+        background-image: url(../images/bg.JPG);
+/*        background-image: url(../images/patterns/upfeathers.png);*/
         background-size: cover;
-        background-repeat: no-repeat;
+        background-repeat: repeat;
+        overflow-y: scroll;
     }
     
+
     
     a {
       text-decoration:none;
@@ -61,7 +64,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     border-bottom-style: solid;
     border-bottom-width: 2px;
     border-bottom-color: #424242;
-    
+    background-image: url(../images/patterns/xv.png);
+     
 /*
   box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),
   0 2px 9px 1px rgba(0,0,0,.12),
@@ -86,8 +90,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     /* Components */
         
     /* paper-tabs */
-    --paper-tabs-selection-bar-color: #00EAEA;
-    --paper-tab-ink: #FF9900;
+    --paper-tabs-selection-bar-color: #00BF00;
+    --paper-tab-ink: #00BF00;
     /* paper-drawer-panel */
     --drawer-menu-color: #ffffff;
     --drawer-border-color: 1px solid #ccc;
@@ -106,9 +110,11 @@ paper-material {
   padding: 16px 0px 16px 0px;
   width: calc(98.66% - 16px);
     margin-top: 0px;
+    margin-bottom: 16px;
 /*  margin: 16px auto;*/
 /*    margin-bottom: 75px;*/
   background: #FFF;
+    background-image: url(../images/patterns/sativa.png);
 }
     
 /*
@@ -181,13 +187,10 @@ paper-menu a {
 /* Breakpoints */
 
 /* Small */
-    @media (max-width: 450px) {
-/*
-
-         #mainToolbar {
-            height: 64px;   
+    @media (max-width: 1040px) {
+        paper-material {
+            margin-bottom: 0px;
         }
-*/
  
     }
     
