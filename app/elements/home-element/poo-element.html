@@ -1,0 +1,89 @@
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<dom-module id="home-element">
+    <style>
+      :host {
+        display: block;
+      }
+            a {
+              text-decoration:none;
+                color: inherit;
+              background-color: inherit;
+           }
+        
+            .Profile_avatar {
+             border-radius: 50%;
+                        border-style: solid;
+            border-color: #424242;
+            border-width: 2px;
+            }
+            .Page_header {
+                margin-bottom: 45px;
+                margin-top: 12px;
+                display: flex;
+                flex-direction: row;
+/*                margin-right: 45px;*/
+                color: #424242;
+            }
+        
+
+        
+            .Page_content {
+             display: flex;
+                flex-direction: column;
+            }
+
+        
+        
+
+
+
+        .green-button{
+            background-color: #00BF00;
+            color: #424242;    
+        }
+        
+    </style>
+  <template>
+    <div
+      class="fb-like"
+      data-share="true"
+      data-width="450"
+      data-show-faces="true">
+    </div>
+    <div class="Page_header horizontal layout center start-justified">
+        <paper-button raised class="green-button">place holder</paper-button>
+        <span class="flex"></span>
+        <paper-button raised class="green-button">place holder</paper-button>
+
+    </div>
+    <div class="Page_content">
+        <paper-button raised class="green-button">place holder</paper-button>
+    </div>
+  </template>
+
+</dom-module>
+  <script>
+    (function () {
+      Polymer({
+        is: 'home-element',
+        properties: {
+          items: {
+            type: Array,
+            notify: true,
+          }
+        },
+        ready: function() {
+
+        }
+      });
+    })();
+  </script>
