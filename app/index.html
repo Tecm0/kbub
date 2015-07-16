@@ -58,24 +58,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 </head>
 
 <body unresolved class="fullbleed layout vertical">
-<!--    FB javascript SDK-->
-    <script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '1610440489223570',
-      xfbml      : true,
-      version    : 'v2.4'
-    });
-  };
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
     
   <template is="dom-bind" id="app">
       <paper-header-panel id="myHeaderPanel"  main mode="scroll">
@@ -101,7 +84,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <!--                <a data-route="home" href="/"><paper-button>Caleb</paper-button></a>-->
                 
-                    <google-signin theme="light" label-signin="Sign-in" client-id="500352828855-16219uu2d87th41tq2hkchb9eeue8thn.apps.googleusercontent.com" scopes="https://www.googleapis.com/auth/drive"></google-signin>
+<!--                    <google-signin theme="light" label-signin="Sign-in" client-id="500352828855-16219uu2d87th41tq2hkchb9eeue8thn.apps.googleusercontent.com" scopes="https://www.googleapis.com/auth/drive"></google-signin>-->
             </div>
         </paper-toolbar>
           
