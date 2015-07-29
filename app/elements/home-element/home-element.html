@@ -37,9 +37,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
         
             .Twitch_container {
-             display: flex;
+                display: flex;
                 position: relative;
-                flex-direction: column;
                 padding-bottom: 56.25%;
                 padding-top: 30px;
             }
@@ -58,6 +57,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 padding-bottom: 46.25%;
                 padding-top: 30px;
             }
+        
             .Chat_container iframe,
             .Chat_container object,
             .Chat_container embed {
@@ -70,22 +70,19 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         
         .green-button{
             background-color: #00BF00;
-            color: #424242;   
+            color: #424242;
         }
-        
+
     </style>
   <template>
 
-
-      
-    <div class="Twitch_container">
-        
-        <iframe src="http://www.twitch.tv/temcogames/embed" frameborder="0" scrolling="no"></iframe>
-        
-    </div>
-      <div class="Chat_container">
-              <iframe src="http://www.twitch.tv/temcogames/chat?popout=" frameborder="0" scrolling="no"></iframe>
-    </div>
+        <div class="Twitch_container">
+            <iframe src="http://www.twitch.tv/temcogames/embed" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div class="Chat_container">
+            <iframe src="http://www.twitch.tv/temcogames/chat?popout=" frameborder="0" scrolling="no"></iframe>
+        </div>
+          
   </template>
 
 </dom-module>
